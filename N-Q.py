@@ -2,7 +2,9 @@ print("Enter the value of N:",end='\n')
 
 n = int(input())
 A = []
-if(n<4):
+if(n==1):
+    print("X")
+if(n>1 and n<4):
     print("No Solution!")
 else:
     if(n%2==0):
