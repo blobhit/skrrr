@@ -2,11 +2,13 @@ print("Enter the value of N:",end='\n')
 
 n = int(input())
 A = []
+
 if(n==1):
     print("X")
+    
 if(n>1 and n<4):
     print("No Solution!")
-else:
+elif(n>4):
     if(n%2==0):
         p, q = 0,1
         for i in range(n):
@@ -36,5 +38,5 @@ def printboard(A):
                 print("0", end=' ')
         print('',end='\n')
 
-printboard(A)
-print("\n")
+    printboard(A)
+    print("\n")
